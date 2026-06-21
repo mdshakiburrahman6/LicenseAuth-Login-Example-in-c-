@@ -101,3 +101,4 @@ private void licenseBtn_Click(object sender, EventArgs e)
 * Auto Load Saved Credentials
 * LicenseAuth Integration
 * Basic Login Status Handling
+* Register with a license key
