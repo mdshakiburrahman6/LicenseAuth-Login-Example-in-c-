@@ -73,6 +73,27 @@ else
 
 ---
 
+## Step 6: Register With License Button
+
+```csharp
+private void licenseBtn_Click(object sender, EventArgs e)
+{
+    LicenseAuthApp.license(keyField.Text);
+
+    if (LicenseAuthApp.response.success)
+    {
+        Main main = new Main();
+        main.Show();
+        this.Hide();
+    }
+    else
+    {
+        MessageBox.Show("Status: " + LicenseAuthApp.response.message);
+    }
+}
+```
+
+
 ## Features
 
 * User Login Authentication
